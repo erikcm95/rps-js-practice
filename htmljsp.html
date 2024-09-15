@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Rock, Paper, Scissors</h1>
+  
+  <!-- BEGIN PLAYER BOX-->
+  <div class="gameBox">
+    <div id="playerDiv";>
+      <h1>Player</h1>
+      <button class="selectBtn" id="rockBtn" onclick="playGame(this.id)">Rock</button>
+      <button class="selectBtn" id="paperBtn" onclick="playGame(this.id)">Paper</button>
+      <button class="selectBtn" id="scissorsBtn" onclick="playGame(this.id)">Scissors</button>
+    </div>
+
+    <div class="scoreBox">
+      <h3>Score:</h3>
+      <h2><span id="playerScore">0</span>-<span id="computerScore">0</span></h2>
+    </div>
+
+    <div class="computerDiv">
+      <h1>Computer</h1>
+      <h4 class="selectBtn" id="computerRock">Rock</h4>
+      <h4 class="selectBtn" id="computerPaper">Paper</h4>
+      <h4 class="selectBtn" id="computerScissors">Scissors</h4>
+    </div>
+  </div>
+
+  <div class="winnerFont">
+    <h1 id="winnerText"></h1>
+  </div>
+  <script src="rps-game.js">
+  </script>
+</body>
+</html>
